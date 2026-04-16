@@ -1,0 +1,38 @@
+// Programa: Promedio de Calificaciones
+import java.util.Scanner;
+
+public class PromediodeCalificaciones {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        // Entrada
+        float matematicas, espanol, quimica, fisica, literatura;
+
+        System.out.println("PROMEDIO DE CALIFICACIONES");
+
+        System.out.print("Matematicas: ");
+        matematicas = sc.nextFloat();
+
+        System.out.print("Español: ");
+        espanol = sc.nextFloat();
+
+        System.out.print("Quimica: ");
+        quimica = sc.nextFloat();
+
+        System.out.print("Fisica: ");
+        fisica = sc.nextFloat();
+
+        System.out.print("Literatura: ");
+        literatura = sc.nextFloat();
+
+        // Proceso
+        float promedio;
+        promedio = (matematicas + espanol + quimica + fisica + literatura) / 5;
+
+        // Salida
+        System.out.println("\nEl promedio general es: " + promedio);
+
+    }
+}
