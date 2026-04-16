@@ -1,0 +1,41 @@
+
+// Programa realizado por Estrella Reyes
+
+import java.lang.Math;
+import java.util.Scanner;
+
+public class Suma {
+
+    public static void main(String[] args) {
+
+        int n1, n2, suma;
+        double raiz_Cuadrado;
+        double cubo;
+
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.println("Programa que suma 2 numeros y los eleva al cuadrado y cubo");
+
+        System.out.println("Escribe el primer numero a sumar: ");
+        n1 = teclado.nextInt();
+
+        System.out.println("Escribe el segundo numero a sumar: ");
+        n2 = teclado.nextInt();
+
+        // Sumamos los numeros
+        suma = n1 + n2;
+
+        System.out.println("El resultado de la suma es: " + suma);
+
+        // Obtenemos la raiz cuadrada de la suma
+        raiz_Cuadrado = Math.sqrt(suma);
+
+        System.out.println("La raiz cuadrada de la suma es: " + raiz_Cuadrado);
+
+        // Elevamos la suma al cubo
+        cubo = Math.pow(suma, 3);
+
+        System.out.println("La suma al cubo es: " + cubo);
+    }
+
+}
